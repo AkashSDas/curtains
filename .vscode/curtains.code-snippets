@@ -17,7 +17,7 @@
   // }
 
   "Create page component": {
-    "scope": "javascript,typescript,typescriptreact",
+    "scope": "typescriptreact",
     "prefix": "pgnext",
     "body": [
       "import { Box } from '@chakra-ui/react';",
@@ -27,5 +27,17 @@
       "}"
     ],
     "description": "Create a page component"
+  },
+  "Create normal component": {
+    "scope": "typescriptreact",
+    "prefix": "cmpnext",
+    "body": [
+      "import { Box } from '@chakra-ui/react';",
+      "",
+      "export default function $1(): JSX.Element {",
+      "  return <Box>$2</Box>;",
+      "}"
+    ],
+    "description": "Create a normal component"
   }
 }
