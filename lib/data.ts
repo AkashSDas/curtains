@@ -1,8 +1,25 @@
+import { nanoid } from "nanoid";
+
 import { faker } from "@faker-js/faker";
+
+export interface Movie {
+  id: string;
+  title: string;
+  description: string;
+  year: number;
+  rating: number;
+  rated: string;
+  runtime: number;
+  genres: string[];
+  trailer: string;
+  movie: string;
+  quality: string;
+  images: { [key: string]: string };
+}
 
 function getMovieData() {
   return {
-    id: faker.helpers.unique(faker.datatype.string),
+    id: nanoid(),
     title: faker.random.words(faker.datatype.number({ min: 1, max: 3 })),
     year: faker.datatype.number({ min: 1900, max: 2021 }),
     rating: faker.datatype.number({ min: 0, max: 10, precision: 0.1 }),
@@ -41,10 +58,10 @@ function getMovieData() {
     trailer: faker.internet.url(),
     movie: faker.internet.url(),
     quality: faker.helpers.arrayElement(["HD", "SD"]),
-    images: [
-      { URL: faker.image.imageUrl(), type: "poster" },
-      { URL: faker.image.imageUrl(), type: "banner" },
-    ],
+    images: {
+      poster: "https://media.giphy.com/media/uKxH9YcrnJaG4/giphy.gif",
+      banner: faker.image.imageUrl(),
+    },
   };
 }
 
