@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/react";
 
-export default function WatchMoviePage(): JSX.Element {
+export default function BrowseMoviesPage(): JSX.Element {
   return <Box></Box>;
 }

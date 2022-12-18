@@ -21,8 +21,8 @@ export default function Navabr(): JSX.Element {
           </Text>
         </Link>
 
-        <Link href="/movies">Movies</Link>
-        <Link href="/series">Series</Link>
+        <Link href="/browse/movies">Movies</Link>
+        <Link href="/browse/tv-shows">TV Shows</Link>
       </HStack>
     </HStack>
   );
