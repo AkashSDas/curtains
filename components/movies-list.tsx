@@ -16,18 +16,16 @@ export default function MoviesList(props: Props): JSX.Element {
         {props.heading}
       </Heading>
 
-      <Box overflowX="scroll" py={pxToRem(36)}>
-        <HStack>
-          {props.movies.map((movie, idx) => (
-            <MovieCard
-              isFirst={idx == 0}
-              isLast={idx == props.movies.length - 1}
-              movie={movie}
-              key={movie.id}
-            />
-          ))}
-        </HStack>
-      </Box>
+      <HStack overflowX="scroll" h={pxToRem(200)} alignItems="center">
+        {props.movies.map((movie, idx) => (
+          <MovieCard
+            isFirst={idx == 0}
+            isLast={idx == props.movies.length - 1}
+            movie={movie}
+            key={movie.id}
+          />
+        ))}
+      </HStack>
     </Box>
   );
 }

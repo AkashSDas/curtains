@@ -27,15 +27,18 @@ export default function MovieCard({
     >
       <ChakraBox
         role="group"
-        h={pxToRem(240)}
-        _hover={{ h: "fit-content", zIndex: 1 }}
+        w={pxToRem(200)}
+        h={pxToRem(120)}
         position="relative"
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        _hover={{ zIndex: 1 }}
       >
         {/* Poster image */}
         <ChakraBox
-          layoutId="poster"
-          w={pxToRem(180)}
-          h={pxToRem(240)}
+          w={pxToRem(200)}
+          h={pxToRem(120)}
           flex="0 0 auto"
           bg="gray.200"
           rounded={pxToRem(12)}
@@ -53,28 +56,39 @@ export default function MovieCard({
 
         {/* Display on parent hover */}
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: isHovered ? 1 : 0 }}
-          transition={{ duration: 0.2 }}
+          layout
+          transition={{ duration: 0.2, ease: "easeInOut" }}
+          initial={{ scale: 1, top: 0, left: 0 }}
+          animate={{
+            scale: isHovered ? 1.08 : 1,
+            top: isHovered ? "-32px" : 0,
+          }}
           style={{
             position: "absolute",
-            top: -32,
-            transform: "translateX(-12.5%)", // to center the box
-            background: "#f2f2f2",
+            // top: "0",
+            // left: "0",
+            originX: 0.5,
+            originY: 0.5,
             borderRadius: "12px",
-            left: isFirst ? "32px" : isLast ? "-32px" : "unset",
+            overflow: "hidden",
           }}
         >
-          <Box top={0} w={pxToRem(180 + 64)} boxShadow="xl" h="max-content">
+          <ChakraBox
+            initial={{ scale: 1 }}
+            animate={{
+              scale: isHovered ? 1.08 : 1,
+            }}
+            bg="gray.200"
+            rounded={pxToRem(12)}
+          >
             {/* Poster image */}
             <ChakraBox
-              layoutId="poster"
-              w={pxToRem(180 + 64)}
-              h={pxToRem(140 + 64)}
+              layout
+              w={pxToRem(200)}
+              h={pxToRem(120)}
               rounded={pxToRem(12)}
               cursor="pointer"
               position="relative"
-              transition="all 0.2s"
             >
               <Image
                 src={movie.images.poster}
@@ -84,13 +98,20 @@ export default function MovieCard({
               />
             </ChakraBox>
 
-            <VStack px={pxToRem(8)} py={pxToRem(6)} gap={0} alignItems="start">
-              <Text fontWeight="semibold">House of Cards</Text>
-              <Text fontSize="sm" color="gray.500" mt={0}>
-                2013 • 5 Seasons • TV-MA
-              </Text>
-            </VStack>
-          </Box>
+            <ChakraBox
+              layout
+              overflow="hidden"
+              px={pxToRem(6)}
+              py={pxToRem(isHovered ? 6 : 0)}
+              initial={{ height: 0 }}
+              animate={{
+                height: isHovered ? "fit-content" : 0, // giving it a height of 30px because using fit-content was causing a jump in animation, overflow takes care of the rest
+              }}
+            >
+              <Text p={pxToRem(6)}>House of Cards</Text>
+              <Text></Text>
+            </ChakraBox>
+          </ChakraBox>
         </motion.div>
       </ChakraBox>
     </Link>
