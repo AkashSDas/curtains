@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
-type Data = {
+export type Data = {
   message: string;
   length: number;
   movies: {
@@ -49,9 +49,9 @@ function getMovies(): Data["movies"] {
       running_times: 1620,
       description:
         "After witnessing a bizarre, traumatic incident involving a patient, Dr. Rose Cotter starts experiencing frightening occurrences that she can't explain. As an overwhelming terror begins taking over her life, Rose must confront her troubling past in order to survive and escape her horrifying new reality.",
-      posterURL: "/posters/winter-sports",
-      bannerURL: "/banners/winter-sports",
-      smallPosterURL: "/small-posters/winter-sports",
+      posterURL: "/posters/winter-sports.png",
+      bannerURL: "/banners/winter-sports.png",
+      smallPosterURL: "/small-posters/winter-sports.png",
     },
     {
       id: 3,
@@ -62,9 +62,9 @@ function getMovies(): Data["movies"] {
       running_times: 1620,
       description:
         "After witnessing a bizarre, traumatic incident involving a patient, Dr. Rose Cotter starts experiencing frightening occurrences that she can't explain. As an overwhelming terror begins taking over her life, Rose must confront her troubling past in order to survive and escape her horrifying new reality.",
-      posterURL: "/posters/kodak",
-      bannerURL: "/banners/kodak",
-      smallPosterURL: "/small-posters/kodak",
+      posterURL: "/posters/kodak.png",
+      bannerURL: "/banners/kodak.png",
+      smallPosterURL: "/small-posters/kodak.png",
     },
     {
       id: 4,
@@ -75,9 +75,9 @@ function getMovies(): Data["movies"] {
       running_times: 1620,
       description:
         "After witnessing a bizarre, traumatic incident involving a patient, Dr. Rose Cotter starts experiencing frightening occurrences that she can't explain. As an overwhelming terror begins taking over her life, Rose must confront her troubling past in order to survive and escape her horrifying new reality.",
-      posterURL: "/posters/braniff-international-airways",
-      bannerURL: "/banners/braniff-international-airways",
-      smallPosterURL: "/small-posters/braniff-international-airways",
+      posterURL: "/posters/braniff-international-airways.png",
+      bannerURL: "/banners/braniff-international-airways.png",
+      smallPosterURL: "/small-posters/braniff-international-airways.png",
     },
     {
       id: 5,
@@ -88,9 +88,9 @@ function getMovies(): Data["movies"] {
       running_times: 1620,
       description:
         "After witnessing a bizarre, traumatic incident involving a patient, Dr. Rose Cotter starts experiencing frightening occurrences that she can't explain. As an overwhelming terror begins taking over her life, Rose must confront her troubling past in order to survive and escape her horrifying new reality.",
-      posterURL: "/posters/casion",
-      bannerURL: "/banners/casion",
-      smallPosterURL: "/small-posters/casion",
+      posterURL: "/posters/casion.png",
+      bannerURL: "/banners/casion.png",
+      smallPosterURL: "/small-posters/casion.png",
     },
     {
       id: 6,
@@ -101,9 +101,9 @@ function getMovies(): Data["movies"] {
       running_times: 1620,
       description:
         "After witnessing a bizarre, traumatic incident involving a patient, Dr. Rose Cotter starts experiencing frightening occurrences that she can't explain. As an overwhelming terror begins taking over her life, Rose must confront her troubling past in order to survive and escape her horrifying new reality.",
-      posterURL: "/posters/fire-wrecks-a-fores",
-      bannerURL: "/banners/fire-wrecks-a-fores",
-      smallPosterURL: "/small-posters/fire-wrecks-a-fores",
+      posterURL: "/posters/fire-wrecks-a-fores.png",
+      bannerURL: "/banners/fire-wrecks-a-fores.png",
+      smallPosterURL: "/small-posters/fire-wrecks-a-fores.png",
     },
     {
       id: 7,
@@ -114,9 +114,9 @@ function getMovies(): Data["movies"] {
       running_times: 1620,
       description:
         "After witnessing a bizarre, traumatic incident involving a patient, Dr. Rose Cotter starts experiencing frightening occurrences that she can't explain. As an overwhelming terror begins taking over her life, Rose must confront her troubling past in order to survive and escape her horrifying new reality.",
-      posterURL: "/posters/knowledge",
-      bannerURL: "/banners/knowledge",
-      smallPosterURL: "/small-posters/knowledge",
+      posterURL: "/posters/knowledge.png",
+      bannerURL: "/banners/knowledge.png",
+      smallPosterURL: "/small-posters/knowledge.png",
     },
     {
       id: 8,
@@ -127,9 +127,9 @@ function getMovies(): Data["movies"] {
       running_times: 1620,
       description:
         "After witnessing a bizarre, traumatic incident involving a patient, Dr. Rose Cotter starts experiencing frightening occurrences that she can't explain. As an overwhelming terror begins taking over her life, Rose must confront her troubling past in order to survive and escape her horrifying new reality.",
-      posterURL: "/posters/the-fall",
-      bannerURL: "/banners/the-fall",
-      smallPosterURL: "/small-posters/the-fall",
+      posterURL: "/posters/the-fall.png",
+      bannerURL: "/banners/the-fall.png",
+      smallPosterURL: "/small-posters/the-fall.png",
     },
     {
       id: 9,
@@ -140,9 +140,9 @@ function getMovies(): Data["movies"] {
       running_times: 1620,
       description:
         "After witnessing a bizarre, traumatic incident involving a patient, Dr. Rose Cotter starts experiencing frightening occurrences that she can't explain. As an overwhelming terror begins taking over her life, Rose must confront her troubling past in order to survive and escape her horrifying new reality.",
-      posterURL: "/posters/dead-may-rise-again",
-      bannerURL: "/banners/dead-may-rise-again",
-      smallPosterURL: "/small-posters/dead-may-rise-again",
+      posterURL: "/posters/dead-may-rise-again.png",
+      bannerURL: "/banners/dead-may-rise-again.png",
+      smallPosterURL: "/small-posters/dead-may-rise-again.png",
     },
     {
       id: 10,
@@ -153,9 +153,9 @@ function getMovies(): Data["movies"] {
       running_times: 1620,
       description:
         "After witnessing a bizarre, traumatic incident involving a patient, Dr. Rose Cotter starts experiencing frightening occurrences that she can't explain. As an overwhelming terror begins taking over her life, Rose must confront her troubling past in order to survive and escape her horrifying new reality.",
-      posterURL: "/posters/inflation",
-      bannerURL: "/banners/inflation",
-      smallPosterURL: "/small-posters/inflation",
+      posterURL: "/posters/inflation.png",
+      bannerURL: "/banners/inflation.png",
+      smallPosterURL: "/small-posters/inflation.png",
     },
     {
       id: 11,
@@ -166,9 +166,9 @@ function getMovies(): Data["movies"] {
       running_times: 1620,
       description:
         "After witnessing a bizarre, traumatic incident involving a patient, Dr. Rose Cotter starts experiencing frightening occurrences that she can't explain. As an overwhelming terror begins taking over her life, Rose must confront her troubling past in order to survive and escape her horrifying new reality.",
-      posterURL: "/posters/kill-them",
-      bannerURL: "/banners/kill-them",
-      smallPosterURL: "/small-posters/kill-them",
+      posterURL: "/posters/kill-them.png",
+      bannerURL: "/banners/kill-them.png",
+      smallPosterURL: "/small-posters/kill-them.png",
     },
     {
       id: 12,
@@ -179,9 +179,9 @@ function getMovies(): Data["movies"] {
       running_times: 1620,
       description:
         "After witnessing a bizarre, traumatic incident involving a patient, Dr. Rose Cotter starts experiencing frightening occurrences that she can't explain. As an overwhelming terror begins taking over her life, Rose must confront her troubling past in order to survive and escape her horrifying new reality.",
-      posterURL: "/posters/seal-force",
-      bannerURL: "/banners/seal-force",
-      smallPosterURL: "/small-posters/seal-force",
+      posterURL: "/posters/seal-force.png",
+      bannerURL: "/banners/seal-force.png",
+      smallPosterURL: "/small-posters/seal-force.png",
     },
     {
       id: 13,
@@ -192,9 +192,9 @@ function getMovies(): Data["movies"] {
       running_times: 1620,
       description:
         "After witnessing a bizarre, traumatic incident involving a patient, Dr. Rose Cotter starts experiencing frightening occurrences that she can't explain. As an overwhelming terror begins taking over her life, Rose must confront her troubling past in order to survive and escape her horrifying new reality.",
-      posterURL: "/posters/the-mountains",
-      bannerURL: "/banners/the-mountains",
-      smallPosterURL: "/small-posters/the-mountains",
+      posterURL: "/posters/the-mountains.png",
+      bannerURL: "/banners/the-mountains.png",
+      smallPosterURL: "/small-posters/the-mountains.png",
     },
     {
       id: 14,
@@ -205,9 +205,9 @@ function getMovies(): Data["movies"] {
       running_times: 1620,
       description:
         "After witnessing a bizarre, traumatic incident involving a patient, Dr. Rose Cotter starts experiencing frightening occurrences that she can't explain. As an overwhelming terror begins taking over her life, Rose must confront her troubling past in order to survive and escape her horrifying new reality.",
-      posterURL: "/posters/recruiting-stations",
-      bannerURL: "/banners/recruiting-stations",
-      smallPosterURL: "/small-posters/recruiting-stations",
+      posterURL: "/posters/recruiting-stations.png",
+      bannerURL: "/banners/recruiting-stations.png",
+      smallPosterURL: "/small-posters/recruiting-stations.png",
     },
   ];
 }

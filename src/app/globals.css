@@ -5,3 +5,19 @@
 body {
   @apply bg-bg text-text2;
 }
+
+svg.fill {
+  @apply fill-current text-text2;
+}
+
+svg.stroke {
+  @apply stroke-current text-text2;
+}
+
+/* Apply sizes to svg icons */
+.icon svg.size_5 {
+  @apply h-5 w-5;
+}
+.icon svg.size_4 {
+  @apply h-[18px] w-[18px];
+}
