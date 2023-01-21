@@ -23,7 +23,7 @@ export default async function WatchMoviePage({ params }: Props) {
   );
 
   async function getMovie(movieId: string) {
-    return fetch(`/api/movie/${movieId}}`)
+    return fetch(`${process.env.BACKEND_URL}/movie/${movieId}}`)
       .then((res) => res.json())
       .then((data) => data)
       .catch((err) => console.log(err));

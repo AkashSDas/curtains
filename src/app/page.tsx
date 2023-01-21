@@ -14,7 +14,7 @@ export default async function HomePage() {
   );
 
   async function getMovies() {
-    return fetch("/api/movie")
+    return fetch(`${process.env.BACKEND_URL}/movie`)
       .then((res) => res.json())
       .then((data) => data)
       .catch((err) => console.log(err));
