@@ -1,3 +1,4 @@
+import MoviesList from "@/components/movie/movies-list";
 import Spotlight from "@/components/shared/spotlight";
 
 import type { Data as MovieData } from "../lib/movie";
@@ -6,8 +7,9 @@ export default async function HomePage() {
   var movies: MovieData = await getMovies();
 
   return (
-    <div>
+    <div className="mb-36">
       <Spotlight movie={movies.movies[13]} />
+      <MoviesList movies={movies.movies} />
     </div>
   );
 

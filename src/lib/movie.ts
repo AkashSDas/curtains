@@ -16,6 +16,7 @@ export type Data = {
   }[];
 };
 
+// https://gist.github.com/jsturgis/3b19447b304616f18657
 var data: Data["movies"] = [
   {
     id: 1,
@@ -71,7 +72,6 @@ var data: Data["movies"] = [
     posterURL: "/posters/braniff-international-airways.png",
     bannerURL: "/banners/braniff-international-airways.png",
     src: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-
     smallPosterURL: "/small-posters/braniff-international-airways.png",
   },
   {
@@ -83,11 +83,10 @@ var data: Data["movies"] = [
     running_times: 1620,
     description:
       "After witnessing a bizarre, traumatic incident involving a patient, Dr. Rose Cotter starts experiencing frightening occurrences that she can't explain. As an overwhelming terror begins taking over her life, Rose must confront her troubling past in order to survive and escape her horrifying new reality.",
-    posterURL: "/posters/casion.png",
-    bannerURL: "/banners/casion.png",
+    posterURL: "/posters/casino.png",
+    bannerURL: "/banners/casino.png",
     src: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-
-    smallPosterURL: "/small-posters/casion.png",
+    smallPosterURL: "/small-posters/casino.png",
   },
   {
     id: 6,
@@ -98,9 +97,9 @@ var data: Data["movies"] = [
     running_times: 1620,
     description:
       "After witnessing a bizarre, traumatic incident involving a patient, Dr. Rose Cotter starts experiencing frightening occurrences that she can't explain. As an overwhelming terror begins taking over her life, Rose must confront her troubling past in order to survive and escape her horrifying new reality.",
-    posterURL: "/posters/fire-wrecks-a-fores.png",
-    bannerURL: "/banners/fire-wrecks-a-fores.png",
-    smallPosterURL: "/small-posters/fire-wrecks-a-fores.png",
+    posterURL: "/posters/fire-wrecks-a-forest.png",
+    bannerURL: "/banners/fire-wrecks-a-forest.png",
+    smallPosterURL: "/small-posters/fire-wrecks-a-forest.png",
     src: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
   },
   {
