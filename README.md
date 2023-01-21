@@ -25,3 +25,7 @@ Start development server:
 ```bash
 npm run dev
 ```
+
+## Design
+
+[Figma Design File](https://www.figma.com/file/miRiQUqtH7snG3OR5HsdgF/curtains?node-id=0%3A1&t=Hu7fLmtsZnlhLGn6-1)
