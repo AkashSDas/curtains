@@ -1,9 +1,9 @@
 import Image from "next/image";
 
 import Spotlight from "@/components/shared/spotlight";
+import VideoPlayer from "@/components/shared/video-player.client";
 
 import type { Data as MovieData } from "@/lib/movie";
-
 interface Props {
   params: { movieId?: string };
 }
@@ -17,8 +17,8 @@ export default async function WatchMoviePage({ params }: Props) {
   }
 
   return (
-    <main>
-      <Spotlight movie={movie.movie} />
+    <main className="mb-28">
+      <VideoPlayer src={movie.movie.src} />
       <Info movie={movie.movie} />
     </main>
   );
