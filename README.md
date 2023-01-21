@@ -2,6 +2,10 @@
 
 Video streaming `🎥` front-end build using the server components of Next.js 13 `app` & Tailwind CSS.
 
+![Presentation](./docs/presentation.png)
+
+![Gif](./docs/ezgif-4-52d877b0ff.gif)
+
 ## Getting Started
 
 ```bash
