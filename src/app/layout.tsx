@@ -4,7 +4,12 @@ import Navbar from "@/components/shared/navbar";
 import { Urbanist } from "@next/font/google";
 import localFont from "@next/font/local";
 
-const urbanist = Urbanist({ subsets: ["latin"], variable: "--font-urbanist" });
+const urbanist = Urbanist({
+  weight: ["400", "500"],
+  variable: "--font-urbanist",
+  subsets: ["latin"],
+  preload: true,
+});
 const cubano = localFont({
   src: "../../public/cubano.ttf",
   variable: "--font-cubano",

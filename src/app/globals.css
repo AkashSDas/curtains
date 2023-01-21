@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-bg text-text2;
+  @apply bg-bg text-text2 font-body;
 }
 
 svg.fill {
