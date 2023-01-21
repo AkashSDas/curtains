@@ -1,33 +1,26 @@
 import Image from "next/image";
 
 import VideoPlayer from "@/components/shared/video-player.client";
+import { Data as MovieData, getMovie } from "@/lib/movie";
 
-import type { Data as MovieData } from "@/lib/movie";
 interface Props {
   params: { movieId?: string };
 }
 
-export default async function WatchMoviePage({ params }: Props) {
+export default function WatchMoviePage({ params }: Props) {
   if (!params.movieId) return <div>Movie not found</div>;
 
-  var movie = await getMovie(params.movieId);
-  if (!movie || movie?.message == "Movie not found") {
+  var movie = getMovie(params.movieId);
+  if (!movie) {
     return <div>Movie not found</div>;
   }
 
   return (
     <main className="mb-28">
-      <VideoPlayer src={movie.movie.src} />
-      <Info movie={movie.movie} />
+      <VideoPlayer src={movie.src} />
+      <Info movie={movie} />
     </main>
   );
-
-  async function getMovie(movieId: string) {
-    return fetch(`${process.env.BACKEND_URL}/movie/${movieId}}`)
-      .then((res) => res.json())
-      .then((data) => data)
-      .catch((err) => console.log(err));
-  }
 }
 
 function Info({ movie }: { movie: MovieData["movies"][0] }) {
