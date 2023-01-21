@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { PlayIcon } from "@/components/shared/icons";
 
-import type { Data as MovieData } from "@/pages/api/movie";
+import type { Data as MovieData } from "@/lib/movie";
 interface Props {
   movie: MovieData["movies"][0];
 }
