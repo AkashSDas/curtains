@@ -13,6 +13,9 @@ const urbanist = Urbanist({
 const cubano = localFont({
   src: "../../public/cubano.ttf",
   variable: "--font-cubano",
+  preload: true,
+  weight: "400",
+  style: "normal",
 });
 
 export default function RootLayout({
