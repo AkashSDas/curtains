@@ -14,7 +14,7 @@ export default async function HomePage() {
   );
 
   async function getMovies() {
-    return fetch("http://localhost:3000/api/movie")
+    return fetch("/api/movie")
       .then((res) => res.json())
       .then((data) => data)
       .catch((err) => console.log(err));

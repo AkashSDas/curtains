@@ -1,6 +1,5 @@
 import Image from "next/image";
 
-import Spotlight from "@/components/shared/spotlight";
 import VideoPlayer from "@/components/shared/video-player.client";
 
 import type { Data as MovieData } from "@/lib/movie";
@@ -24,7 +23,7 @@ export default async function WatchMoviePage({ params }: Props) {
   );
 
   async function getMovie(movieId: string) {
-    return fetch(`http://localhost:3000/api/movie/${movieId}}`)
+    return fetch(`/api/movie/${movieId}}`)
       .then((res) => res.json())
       .then((data) => data)
       .catch((err) => console.log(err));
